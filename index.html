@@ -4,34 +4,37 @@
       <title>Название страницы</title>
       <link rel="stylesheet" href="/css/indexcss.css" />
       <link rel="stylesheet" href="/css/normalize8.css" />
-    
+      <script src="/js/formjs.js"></script>
     
   </head>
   <body>
       <header>
           <h1>Вариант 2</h1>
-          <button>Открыть форму</button>
+          <button class="open-button" onclick="openForm()">Открыть форму</button>
       </header>
-      <main>
-          <form>
-            <p>Имя мастера: <input type="text" name="Name_master" placeholder="введите имя"></p>
-            <p>Количество человек: <input type="number" name="num_people" placeholder="Введите число"></p>
-            <p>Напитки:
-                <select>
-                    <option value="zero_drink">Не выбрано</option>
-                    <option value="water">Вода</option>
-                    <option value="juice">Сок</option>
-                    <option value="lemonade">Лимонад</option>
-                </select>
-            </p>
-            <p>Нуждали снеки:
-                <select>
-                    <option value="zero_snacks">Не выбрано</option>
-                    <option value="True">Да</option>
-                    <option value="False">Нет</option>
-                </select>
-            </p>
-          </form>
+      <main class="form-popup" id="myForm">
+            <form action="#" class="form-container">
+                <h1>Игротека</h1>
+                <label>Имя мастера: <input type="text" name="Name_master" placeholder="введите имя"></label>
+                <label>Количество человек: <input type="number" name="num_people" placeholder="Введите число"></label>
+                <label>Напитки:
+                    <select>
+                        <option value="zero_drink">Не выбрано</option>
+                        <option value="water">Вода</option>
+                        <option value="juice">Сок</option>
+                        <option value="lemonade">Лимонад</option>
+                    </select>
+                </label>
+                <label>Нуждали снеки:
+                    <select>
+                        <option value="zero_snacks">Не выбрано</option>
+                        <option value="True">Да</option>
+                        <option value="False">Нет</option>
+                    </select>
+                </label>
+                <button type="submit" class="btn">Отправить</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+            </form>
       </main>
       <footer>
           <p>Васильев М.И. группа 201-324</p>

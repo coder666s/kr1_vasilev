@@ -15,8 +15,8 @@
       <main class="form-popup" id="myForm">
             <form action="#" class="form-container">
                 <h1>Игротека</h1>
-                <label>Имя мастера: <input type="text" name="Name_master" placeholder="введите имя"></label>
-                <label>Количество человек: <input type="number" name="num_people" placeholder="Введите число"></label>
+                <label>Имя мастера<span>*</span>: <input type="text" name="Name_master" placeholder="введите имя" required></label>
+                <label>Количество человек <span>*</span>: <input type="number" name="num_people" min="0" placeholder="Введите число" required></label>
                 <label>Напитки:
                     <select>
                         <option value="zero_drink">Не выбрано</option>
